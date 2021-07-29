@@ -8,7 +8,7 @@ import {
     CTabPane
 } from '@coreui/react'
 
-
+import { Canvas} from '@react-three/fiber'
 import DrawArea from './components/DrawArea';
 import SpatialDomain from './specification/spatial-domain/SpatialDomain';
 
@@ -21,7 +21,8 @@ export default function LTC() {
 
     return (
       <>
-        <DrawArea />
+       
+        <DrawArea style={{height:"400px"}}/> 
         <CTabs activeTab="spatial-domain">
           <CNav variant="tabs">
             <CNavItem>
